@@ -1,8 +1,25 @@
 <template>
   <div id="app">
     <div id="header">
-      <router-link to="/test1">ページ１へ</router-link>
-      <router-link to="/test2">ページ２へ</router-link>
+      <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <a class="navbar-brand" href="/">iikannjinologo</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="ナビゲーションの切替">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <router-link to="/">Home</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/test1">ページ１へ</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/test2">ページ２へ</router-link>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
     <router-view></router-view>
   </div>
