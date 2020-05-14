@@ -1,8 +1,8 @@
 <template>
-<div>
-    <h1>Contacts</h1>
+  <div>
+    <h1>Contact</h1>
     <div class="testscss">
-      Contacts
+      Contact
     </div>
   </div>
 </template>

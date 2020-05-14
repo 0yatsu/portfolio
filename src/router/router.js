@@ -5,7 +5,7 @@ import Home from '@/components/Home.vue'
 import About from "@/components/About.vue"
 import Skills from "@/components/Skills.vue"
 import Works from "@/components/Works.vue"
-import Contacts from "@/components/Contacts.vue"
+import Contact from "@/components/Contact.vue"
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css' 
@@ -19,7 +19,7 @@ const routes = [
   { path: '/about', component: About },
   { path: '/skills', component: Skills },
   { path: '/works', component: Works },
-  { path: '/contacts', component: Contacts },
+  { path: '/contact', component: Contact },
 
 ]
 
