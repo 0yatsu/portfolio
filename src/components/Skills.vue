@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>test2</h1>
-    <p>nakami</p>
+    <h1>skills</h1>
+    <p>skills</p>
   </div>
 </template>

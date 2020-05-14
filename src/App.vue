@@ -1,46 +1,69 @@
 <template>
   <div id="app">
-    <div id="header">
-      <nav class="navbar navbar-expand-lg navbar-light bg-info">
-        <a class="navbar-brand" href="/">iikannjinologo</a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="ナビゲーションの切替">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <router-link to="/">Home</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to="/test1">ページ１へ</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to="/test2">ページ２へ</router-link>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-    <router-view></router-view>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <router-link to="/" class="nav-link">Home</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/about" class="nav-link">About</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/skills" class="nav-link">Skills</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/works" class="nav-link">Works</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/contacts" class="nav-link">Contacts</router-link>
+        </li>
+      </ul>
+    </nav>
+    <!-- 
+    <button @click="toggle" type="button" class="btn btn-secondary float-right">
+      <font-awesome-icon icon="bars" />
+    </button>
+    <Drawer @close="toggle" align="right" :closeable="true">
+      <div v-if="open">
+        <ul class="">
+          <li class="">
+            <router-link to="/">Home</router-link>
+          </li>
+          <li class="">
+            <router-link to="/test1">Test1</router-link>
+          </li>
+          <li class="">
+            <router-link to="/test2">Test2</router-link>
+          </li>
+        </ul>
+      </div>
+    </Drawer>
+     -->
+    <transition mode="out-in">
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 
 <script>
+// import { VueLoading } from 'vue-loading-template'
+import Drawer from "vue-simple-drawer"
 
 export default {
   name: 'App',
   components: {
+    // VueLoading
+    Drawer,
+  },
+  methods: {
+    toggle() {
+      this.open = !this.open
+    }
+  },
+  data() {
+    return {
+      open: false
+    }
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

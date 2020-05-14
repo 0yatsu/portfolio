@@ -2,8 +2,11 @@ import Vue from 'vue'
 import VueRouter from "vue-router"
 import BootstrapVue from 'bootstrap-vue'
 import Home from '@/components/Home.vue'
-import test1 from "@/components/test1.vue"
-import test2 from "@/components/test2.vue"
+import About from "@/components/About.vue"
+import Skills from "@/components/Skills.vue"
+import Works from "@/components/Works.vue"
+import Contacts from "@/components/Contacts.vue"
+
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css' 
 
@@ -13,13 +16,16 @@ Vue.use(BootstrapVue)
 const routes = [
   { path: '/', component: Home },
 
-  { path: '/test1', component: test1 },
-  { path: '/test2', component: test2 }
+  { path: '/about', component: About },
+  { path: '/skills', component: Skills },
+  { path: '/works', component: Works },
+  { path: '/contacts', component: Contacts },
+
 ]
 
 const router = new VueRouter({
   mode: 'history',
-  routes: routes
+  routes: routes,
 })
 
 export default router
