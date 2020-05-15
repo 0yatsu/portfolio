@@ -15,9 +15,10 @@
       </label>
     </div> -->
     <div class="col-12">
-      <div id="nav-drawer" class="float-right">
+      <!-- <label for="nav-input">{{ checked }}</label> -->
+      <div id="nav-drawer" name="navdrawer" class="float-right">
         <!-- ハンバーガーメニュー -->
-        <input id="nav-input" type="checkbox" class="invisible">
+        <input id="nav-input" v-model="checked" type="checkbox" class="invisible">
         <label id="" for="nav-input">
           <font-awesome-icon icon="bars" class="fa-3x p-2" />
         </label>
@@ -26,31 +27,43 @@
         <label id="nav-overlay" for="nav-input"></label>
 
         <div id="nav-content">
-          <label id="" for="nav-input">
-            <font-awesome-icon icon="times" class="fa-3x p-2" />
+          <label class="text-right col-12" id="" for="nav-input">
+            <font-awesome-icon icon="times" class="fa-2x text-white mt-2" />
           </label>
 
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <router-link to="/" class="nav-link">Home</router-link>
-            </li>
+          <div class="">
+            <ul class="navbar-nav">
+              <li class="nav-item active" v-on:click="navclose()">
+                <router-link to="/" class="nav-link">
+                  <label id="" for="nav-input">Home</label>
+                </router-link>
+              </li>
 
-            <li class="nav-item">
-              <router-link to="/about" class="nav-link">About</router-link>
-            </li>
+              <li class="nav-item active" v-on:click="navclose()">
+                <router-link to="/about" class="nav-link">
+                  <label id="" for="nav-input">About</label>
+                </router-link>
+              </li>
 
-            <li class="nav-item">
-              <router-link to="/skills" class="nav-link">Skills</router-link>
-            </li>
+              <li class="nav-item active" v-on:click="navclose()">
+                <router-link to="/skills" class="nav-link">
+                  <label id="" for="nav-input">Skills</label>
+                </router-link>
+              </li>
 
-            <li class="nav-item">
-              <router-link to="/works" class="nav-link">Works</router-link>
-            </li>
+              <li class="nav-item active" v-on:click="navclose()">
+                <router-link to="/works" class="nav-link">
+                  <label id="" for="nav-input">Works</label>
+                </router-link>
+              </li>
 
-            <li class="nav-item">
-              <router-link to="/contact" class="nav-link">Contact</router-link>
-            </li>
-          </ul>
+              <li class="nav-item active" v-on:click="navclose()">
+                <router-link to="/contact" class="nav-link">
+                  <label id="" for="nav-input">Contact</label>
+                </router-link>
+              </li>
+            </ul>
+          </div>
         </div>
 
       </div>
@@ -107,17 +120,26 @@
 
 <script>
 
+//import { isOpen } from '@/assets/sass/main.scss'
+
 export default {
   name: 'App',
   components: {
   },
-  methods: {
-    // toggle() {
-    // }
-  },
-  data() {
+    data() {
     return {
+      checked: false,
+      // navinput: {
+      //   type: Boolean,
+      //   default: false,
+      // }
     }
-  }
+  },
+  methods: {
+    navclose: function () {
+      console.log('click!!!')
+      this.$data.checked = false;
+    },
+  },
 }
 </script>
