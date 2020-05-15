@@ -1,9 +1,41 @@
 // メイン
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap');
 
+body {
+  background-color: whitesmoke;
+  color: black;
+  }
+
 ul {
   list-style: none;
   padding: 0;
+  li {
+    #navmenu {
+      font-size: 30px;  
+    }
+  }
+
+  .navbar:hover, li:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .navbar-nav .nav-link ,a{
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 0;
+    :hover{
+      color: whitesmoke;
+      cursor: pointer;
+    }
+
+  }
+  
+  a.nav-link{
+    &:hover{
+      color: whitesmoke;
+      cursor: pointer;
+    }
+  }
 }
 
 // :root {
@@ -16,23 +48,23 @@ ul {
     font-size: large;
   }
   
-  .bm-menu {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1000; /* Stay on top */
-    top: 0;
-    left: 0;
-    background-color: rgb(63, 63, 65); /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.3s; /*0.5 second transition effect to slide in the sidenav*/
-  }
+  // .bm-menu {
+  //   height: 100%; /* 100% Full-height */
+  //   width: 0; /* 0 width - change this with JavaScript */
+  //   position: fixed; /* Stay in place */
+  //   z-index: 1000; /* Stay on top */
+  //   top: 0;
+  //   left: 0;
+  //   background-color: rgb(63, 63, 65); /* Black*/
+  //   overflow-x: hidden; /* Disable horizontal scroll */
+  //   padding-top: 60px; /* Place content 60px from the top */
+  //   transition: 0.3s; /*0.5 second transition effect to slide in the sidenav*/
+  // }
 
   #nav-drawer {
     position: relative;
     z-index: 2;
-    --isOpen: 'false';
+    // --isOpen: 'false';
   
   
     /*チェックボックス等は非表示に*/
@@ -119,51 +151,49 @@ ul {
     //   transform: translateX(0%);/*中身を表示（左へスライド）*/
     //   opacity: .5;
     // }
+    #baricon {
+      opacity: 100%;
+      cursor: pointer;
+      transition: all 1s 0s ease;
+    }
 
+    #xicon {
+      opacity: 100%;
+      cursor: pointer;
+      color: whitesmoke;
+      transition: all 1s 0s ease;
+    }
 
-    // @if --isOpen == 'true'{
-      // #nav-overlay{
-      //   display: block;
-      //   transform: translateX(0%);/*中身を表示（左へスライド）*/
-      // }
-      // #nav-content {
-      //   display: block;
-      //   transform: translateX(67vw);/*中身を表示（左へスライド）*/
-      //   box-shadow: 6px 0 25px rgba(0,0,0,.15);
-      // }
-    // } @else if --isOpen == 'false'{
-      #nav-overlay {
-        box-sizing: content-box;
-        overflow: auto;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 2;
-        width: 100%;/*右側に隙間を作る（閉じるカバーを表示）*/
-        height: 100%;
-        background: rgba(0, 0, 0, 0.7);/*背景色*/
-        // transition: 0.4s ease-in-out;/*滑らかに表示*/
-        transition: all 1s 0s ease;
-        transform: translateX(100%);/*右に隠しておく*/
-      }
-    
-      /*中身*/
-      #nav-content {
-        box-sizing: content-box;
-        overflow: auto;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 2;/*最前面に*/
-        width:33vw;/*右側に隙間を作る（閉じるカバーを表示）*/
-        height: 100%;
-        background: rgb(0, 0, 0);/*背景色*/
-        // transition: 0.4s ease-in-out;/*滑らかに表示*/
-        transition: all 1s 0s ease;
-        transform: translateX(100vw);/*右に隠しておく*/
-      }
-    // }
+    #nav-overlay {
+      box-sizing: content-box;
+      overflow: auto;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      width: 100%;/*右側に隙間を作る（閉じるカバーを表示）*/
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);/*背景色*/
+      // transition: 0.4s ease-in-out;/*滑らかに表示*/
+      transition: all 1s 0s ease;
+      transform: translateX(100%);/*右に隠しておく*/
+    }
   
+    #nav-content {
+      box-sizing: content-box;
+      overflow: auto;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 2;/*最前面に*/
+      width:33vw;/*右側に隙間を作る（閉じるカバーを表示）*/
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      transition: all 1s 0s ease;
+      transform: translateX(100vw);/*右に隠しておく*/
+    }
+  // }
+
 
     #nav-input:checked ~ #nav-overlay{
       display: block;
@@ -172,8 +202,15 @@ ul {
     #nav-input:checked ~ #nav-content {
       display: block;
       transform: translateX(67vw);/*中身を表示（左へスライド）*/
-      box-shadow: 6px 0 25px rgba(0,0,0,.15);
+      box-shadow: 6px 0 25px rgba(0,0,0,1);
     }
+    #nav-input:checked ~ #baricon {
+      opacity: 0%;
+    }
+    #nav-input:checked ~ #xicon {
+      opacity: 0%;
+    }
+
   }
 }
 

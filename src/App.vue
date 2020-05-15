@@ -19,47 +19,47 @@
       <div id="nav-drawer" name="navdrawer" class="float-right">
         <!-- ハンバーガーメニュー -->
         <input id="nav-input" v-model="checked" type="checkbox" class="invisible">
-        <label id="" for="nav-input">
-          <font-awesome-icon icon="bars" class="fa-3x p-2" />
+        <label id="baricon" for="nav-input">
+          <font-awesome-icon icon="bars" class="baricon fa-3x p-2" />
         </label>
         
         <!-- メニュー展開時背景 -->
         <label id="nav-overlay" for="nav-input"></label>
 
         <div id="nav-content">
-          <label class="text-right col-12" id="" for="nav-input">
-            <font-awesome-icon icon="times" class="fa-2x text-white mt-2" />
+          <label class="text-right col-12" id="xicon" for="nav-input">
+            <font-awesome-icon icon="times" class="fa-2x mt-2" />
           </label>
 
           <div class="">
             <ul class="navbar-nav">
-              <li class="nav-item active" v-on:click="navclose()">
+              <li class="nav-item active text-center py-2" v-on:click="navclose()">
                 <router-link to="/" class="nav-link">
-                  <label id="" for="nav-input">Home</label>
+                  <label class="" id="navmenu" for="nav-input">Home</label>
                 </router-link>
               </li>
 
-              <li class="nav-item active" v-on:click="navclose()">
+              <li class="nav-item active text-center py-2" v-on:click="navclose()">
                 <router-link to="/about" class="nav-link">
-                  <label id="" for="nav-input">About</label>
+                  <label id="navmenu" for="nav-input">About</label>
                 </router-link>
               </li>
 
-              <li class="nav-item active" v-on:click="navclose()">
+              <li class="nav-item active text-center py-2" v-on:click="navclose()">
                 <router-link to="/skills" class="nav-link">
-                  <label id="" for="nav-input">Skills</label>
+                  <label id="navmenu" for="nav-input">Skills</label>
                 </router-link>
               </li>
 
-              <li class="nav-item active" v-on:click="navclose()">
+              <li class="nav-item active text-center py-2" v-on:click="navclose()">
                 <router-link to="/works" class="nav-link">
-                  <label id="" for="nav-input">Works</label>
+                  <label id="navmenu" for="nav-input">Works</label>
                 </router-link>
               </li>
 
-              <li class="nav-item active" v-on:click="navclose()">
+              <li class="nav-item active text-center py-2" v-on:click="navclose()">
                 <router-link to="/contact" class="nav-link">
-                  <label id="" for="nav-input">Contact</label>
+                  <label id="navmenu" for="nav-input">Contact</label>
                 </router-link>
               </li>
             </ul>
