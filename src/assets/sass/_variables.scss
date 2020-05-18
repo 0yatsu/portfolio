@@ -2,3 +2,72 @@
 .testscss{
   color: rgb(255, 0, 21);
 }
+
+#home{
+  // .out {
+  //   width: 100vw;
+  //   height: 100vh;
+  // }
+
+  // .out_img {
+  //   background-image: url('test.jpg');
+  //   background-position: center center;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  // }
+
+  .hometitle{
+    font-size: 40px;
+    color: black;
+    position: fixed;
+    top: 45vh;
+    left: 50vw;
+    transform : translate(-50%,-50%);
+    width: 100vw;
+  }
+}
+
+#about{
+  font-size: 16px;
+
+  img.aboutimg{
+    height: 30%;
+    width: 30%;
+  }
+  p.profile{
+    font-size: px;
+  }
+}
+
+  // .glitch--8{
+  //   [data-char]
+  //   --split:50;
+  //   color:transparent;
+  //   position:relative;
+  //   &:after
+  //   &:before
+  //     content attr(data-char)
+  //     position absolute
+  //     top 0%
+  //     left 0%
+  //     height 100%
+  //     width 100%
+  //     color white
+  //     -webkit-clip-path var(--clip)
+  //     clip-path var(--clip)
+  //   &:after
+  //     --clip inset(0 0 calc(var(--split) * 1%) 0)
+  //     --shift-y -20
+  //     --shift-x 50
+  //     animation shift 3s infinite steps(1)
+  //   &:before
+  //     --shift-x -50
+  //     animation shift 4s infinite steps(1)
+  //     --clip inset(calc((95 - var(--split)) * 1%) 0 0 0)
+
+  //   [data-char="C"]
+  //   [data-char="H"]
+  //     &:after
+  //       --shift-y 25
+  //       --shift-x 0
+  // }

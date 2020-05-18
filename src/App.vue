@@ -110,7 +110,7 @@
       </div>
     </Drawer>
      -->
-    <div class="col-12">
+    <div class="">
       <transition mode="out-in">
         <router-view></router-view>
       </transition>
