@@ -1,6 +1,6 @@
 <template>
-<div class="col-12" id="about">
-  <h1 class="">About</h1>
+  <div class="col-12" id="about">
+    <h1 class="">About</h1>
     <div class="row">
       <img class="aboutimg col-4" src="../static/about.jpg"/>
       <div class="col-8">
