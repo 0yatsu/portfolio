@@ -157,6 +157,9 @@ body {
       opacity: 100%;
       cursor: pointer;
       transition: all 1s 0s ease;
+      position: fixed;
+      top: 0vh;
+      left: 96vw;
     }
 
     #xicon {
@@ -164,6 +167,9 @@ body {
       cursor: pointer;
       color: whitesmoke;
       transition: all 1s 0s ease;
+      position: relative;
+      top: 0vh;
+      left: 0vw;
     }
 
     #nav-overlay {
