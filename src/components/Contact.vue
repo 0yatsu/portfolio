@@ -1,5 +1,5 @@
 <template>
-  <div id="contact">
+  <div class="col-12" id="contact">
     <h1>Contact</h1>
     <div class="row">
       <div class="offset-4">
