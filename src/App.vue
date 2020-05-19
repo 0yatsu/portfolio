@@ -20,7 +20,7 @@
         <!-- ハンバーガーメニュー -->
         <input id="nav-input" v-model="checked" type="checkbox" class="invisible">
         <label id="baricon" for="nav-input">
-          <font-awesome-icon icon="bars" class="baricon fa-3x p-2" />
+          <font-awesome-icon :icon="['fas', 'bars']" class="baricon fa-3x p-2" />
         </label>
         
         <!-- メニュー展開時背景 -->
