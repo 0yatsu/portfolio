@@ -63,11 +63,10 @@
             使用技術:Unity、C#、WebGL
           </li>
           <li>
-            <unity
-              あああ
+            <!-- <unity
               src="public\unitybuild\Build\public.json"
               unityLoader="public\unitybuild\Build\UnityLoader.js">
-            </unity>
+            </unity> -->
           </li>
 
         </ul>
@@ -87,16 +86,16 @@
 </template>
 
 <script>
-import unity from 'vue-unity-webgl'
+// import unity from 'vue-unity-webgl'
 
 export default {
   components: {
-    unity
+    // unity
   },
   data() {
     return {
-      gameWidth: window.innerWidth,
-      gameHeight: window.innerHeight * 0.96 - 134 // 134はヘッダー等の値
+      // gameWidth: window.innerWidth,
+      // gameHeight: window.innerHeight * 0.96 - 134 // 134はヘッダー等の値
       // navinput: {
       //   type: Boolean,
       //   default: false,
