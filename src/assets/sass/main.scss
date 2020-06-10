@@ -159,8 +159,12 @@ body {
       transition: all 1s 0s ease;
       position: fixed;
       top: 0vh;
-      left: 96vw;
+      right: 10px;
       color: black;
+      @media (max-width: 670px) {
+        // position: relative;;
+      };
+
     }
 
     #xicon {
@@ -186,6 +190,9 @@ body {
       // transition: 0.4s ease-in-out;/*滑らかに表示*/
       transition: all 1s 0s ease;
       transform: translateX(100%);/*右に隠しておく*/
+      @media (max-width: 670px) {
+        transition: all 0.7s 0s ease;
+      };
     }
   
     #nav-content {
@@ -194,12 +201,15 @@ body {
       position: fixed;
       top: 0;
       left: 0;
-      z-index: 2;/*最前面に*/
-      width:33vw;/*右側に隙間を作る（閉じるカバーを表示）*/
+      z-index: 2;
+      width:33vw;
       height: 100%;
       background: rgba(0, 0, 0, 0.4);
       transition: all 1s 0s ease;
       transform: translateX(100vw);/*右に隠しておく*/
+      @media (max-width: 670px) {
+        width: 100vw;
+      }
     }
   // }
 
@@ -212,6 +222,9 @@ body {
       display: block;
       transform: translateX(67vw);/*中身を表示（左へスライド）*/
       box-shadow: 6px 0 25px rgba(0,0,0,1);
+      @media (max-width: 670px) {
+        transform: translateX(0vw);
+      };
     }
     #nav-input:checked ~ #baricon {
       opacity: 0%;
