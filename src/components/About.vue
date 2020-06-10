@@ -2,8 +2,8 @@
   <div class="col-12" id="about">
     <h1 class="">About</h1>
     <div class="row">
-      <img class="aboutimg col-4" src="../static/about.jpg"/>
-      <div class="col-8">
+      <img class="aboutimg col-sm-4 col-12" src="../static/about.jpg"/>
+      <div class="col-sm-8 col-12 py-2">
         <h4>自己紹介</h4>
         <div class="card mb-1">
           <div class="card-body">
@@ -33,7 +33,7 @@
         <div class="card mb-1">
           <div class="card-body">
             <h5>好きな食べ物</h5>
-            ピザ、ラーメン
+            ピザ、ラーメン、ハンバーガー、フライドポテト
           </div>
         </div>
 
