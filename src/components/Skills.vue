@@ -2,7 +2,7 @@
   <div class="col-12" id="skills">
     <h1>Skills</h1>
     <div>
-      レベル1:独学、レベル2:研究、インターン等での使用経験あり、レベル3:使いこなせる、人に教えることができる
+      レベル1:使用したことがある、やったことがある、レベル2:使用してアプリ等を作ったことがある、インターンで使用したことがある、レベル3:使いこなせる、人に教えることができる
     </div>
     <div class="">
       <div class="card col-12 mb-2">
@@ -21,7 +21,7 @@
                 <tr>
                   <th scope="row">C</th>
                   <td></td>
-                  <td>レベル2</td>
+                  <td>レベル1</td>
                 </tr>
                 <tr>
                   <th scope="row">C++</th>
@@ -31,7 +31,7 @@
                 <tr>
                   <th scope="row">C#</th>
                   <td></td>
-                  <td>レベル1</td>
+                  <td>レベル2</td>
                 </tr>
                 <tr>
                   <th scope="row">JavaScript</th>
@@ -46,7 +46,7 @@
                 <tr>
                   <th scope="row"></th>
                   <td>Vue.js</td>
-                  <td>レベル1</td>
+                  <td>レベル2</td>
                 </tr>
                 <tr>
                   <th scope="row">HTML5</th>
@@ -77,7 +77,7 @@
               <tbody>
                 <tr>
                   <th scope="row">Unity</th>
-                  <td>レベル1</td>
+                  <td>レベル2</td>
                 </tr>
                 <tr>
                   <th scope="row">Cocos creatar</th>
